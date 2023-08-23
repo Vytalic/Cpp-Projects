@@ -32,7 +32,7 @@ void gotoxy(int x, int y)
 void wait (float seconds)
 {
 	clock_t endwait;
-	endwait = clock() + seconds + CLOCKS_PER_SEC/25;
+	endwait = clock() + seconds + CLOCKS_PER_SEC/20;
 	while (clock() < endwait){}
 }
 
